@@ -1,0 +1,173 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+}
+
+/* Page background */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Main card */
+.container {
+  width: 340px;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.container h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+/* Counter number */
+#count {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  transition: color 0.25s ease;
+}
+
+/* Step input */
+#step {
+  width: 90px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 28px;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+#step:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+/* Buttons row */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+button {
+  padding: 10px 18px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #667eea;
+  color: white;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Click */
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Reset special */
+#reset {
+  background: #ff5f5f;
+}
+
+/* Mobile */
+@media (max-width: 400px) {
+  .container {
+    width: 92%;
+    padding: 30px 20px;
+  }
+
+  #count {
+    font-size: 48px;
+  }
+}
+/* ===== PRO Footer Email Badge ===== */
+.footer-email {
+  position: fixed;
+  right: 18px;
+  bottom: 16px;
+  z-index: 1000;
+  animation: fadeInUp 0.6s ease;
+}
+
+/* Glass card */
+.footer-email a {
+  display: block;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+  padding: 7px 12px;
+  border-radius: 10px;
+
+  background: rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  letter-spacing: 0.3px;
+
+  transition: all 0.25s ease;
+}
+
+/* Hover glow */
+.footer-email a:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: rgba(0, 0, 0, 0.45);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Click feedback */
+.footer-email a:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Entry animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Mobile auto-hide (clean UI) */
+@media (max-width: 480px) {
+  .footer-email {
+    opacity: 0.6;
+  }
+
+  .footer-email a {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
