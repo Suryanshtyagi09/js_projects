@@ -1,0 +1,11 @@
+# 🚀 JS Projects
+
+A collection of beginner-to-intermediate JavaScript projects built to strengthen core JS concepts through hands-on practice.
+
+---
+
+## 📌 Projects Included
+
+### 1️⃣ Smart Counter
+An interactive counter app where users can increase, decrease, or reset the count using a custom step value.
+
