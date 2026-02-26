@@ -12,3 +12,7 @@ An interactive counter app where users can increase, decrease, or reset the coun
 ### 2 Color Flipper 
 A modern and interactive JavaScript project that generates random HEX colors,
 displays their RGB values and names,and enhances user experience with smart UI features.
+
+### 3 Digital Clock
+A modern, responsive digital clock built using HTML, CSS, and JavaScript.
+This project displays the current time in real-time with additional professional features.
