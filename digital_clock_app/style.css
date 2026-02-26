@@ -1,0 +1,87 @@
+:root {
+  --bg1: #0f172a;
+  --bg2: #1e293b;
+  --text: #22c55e;
+  --card: rgba(255, 255, 255, 0.08);
+}
+
+body.light {
+  --bg1: #f1f5f9;
+  --bg2: #e2e8f0;
+  --text: #0f172a;
+  --card: rgba(0, 0, 0, 0.05);
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+.container {
+  text-align: center;
+  background: var(--card);
+  padding: 40px 60px;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+#clock {
+  font-size: 56px;
+  font-weight: bold;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+#date {
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.controls {
+  margin-top: 25px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: #38bdf8;
+  color: white;
+  transition: transform 0.15s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* 📱 Responsive */
+@media (max-width: 500px) {
+  .container {
+    padding: 25px 30px;
+  }
+
+  #clock {
+    font-size: 38px;
+  }
+}
