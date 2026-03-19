@@ -1,0 +1,141 @@
+:root {
+  --bg: #0f172a;
+  --card: rgba(255, 255, 255, 0.08);
+  --primary: #6366f1;
+  --accent: #f59e0b;
+  --danger: #ef4444;
+  --text: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(circle at top, #1e293b, #0f172a);
+  font-family: sans-serif;
+  color: #e2e8f0;
+}
+
+.title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+
+  /* gradient text */
+  background: linear-gradient(90deg, #6366f1, #22c55e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.calculator {
+  background: var(--card);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  border-radius: 20px;
+  width: 320px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+  animation: fadeIn 0.5s ease;
+  margin-top: 10px;
+}
+
+.display {
+  background: #020617;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#expression {
+  font-size: 14px;
+  opacity: 0.6;
+  text-align: right;
+}
+
+#result {
+  font-size: 32px;
+  text-align: right;
+  color: #22c55e;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  padding: 16px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #1e293b;
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: #334155;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button.active {
+  background: #38bdf8 !important;
+}
+
+button[data-value="="] {
+  background: var(--primary);
+  color: white;
+  grid-column: span 2;
+  box-shadow: 0 0 15px var(--primary);
+}
+
+button[data-value="C"] {
+  background: var(--danger);
+  color: white;
+}
+
+button[data-value="DEL"] {
+  background: var(--accent);
+  color: white;
+}
+
+.history {
+  margin-top: 20px;
+  background: rgba(0,0,0,0.3);
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.history h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history li {
+  font-size: 13px;
+  cursor: pointer;
+  margin: 4px 0;
+  opacity: 0.8;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

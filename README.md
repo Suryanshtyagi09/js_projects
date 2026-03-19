@@ -16,3 +16,7 @@ displays their RGB values and names,and enhances user experience with smart UI f
 ### 3 Digital Clock
 A modern, responsive digital clock built using HTML, CSS, and JavaScript.
 This project displays the current time in real-time with additional professional features.
+
+### 4 Pro Calculator
+A fully interactive and responsive calculator built using HTML, CSS, and Vanilla JavaScript.
+This project includes advanced features like real-time result preview, keyboard support, and custom calculation logic without using eval().
