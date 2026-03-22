@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Todo Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <h1 class="title"> Smart Todo Pro</h1>
+
+    <!-- Input Section -->
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="What needs to be done?" />
+      <button id="addBtn">Add</button>
+    </div>
+
+    <!-- Search -->
+    <input type="text" id="searchInput" placeholder="🔍 Search tasks..." class="search" />
+
+    <!-- Filters -->
+    <div class="filters">
+      <button data-filter="all" class="active-filter">All</button>
+      <button data-filter="completed">Completed</button>
+      <button data-filter="pending">Pending</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+
+    <!-- Counter -->
+    <div class="footer">
+      <p id="taskCount"></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

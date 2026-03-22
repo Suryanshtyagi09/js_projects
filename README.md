@@ -20,3 +20,6 @@ This project displays the current time in real-time with additional professional
 ### 4 Pro Calculator
 A fully interactive and responsive calculator built using HTML, CSS, and Vanilla JavaScript.
 This project includes advanced features like real-time result preview, keyboard support, and custom calculation logic without using eval().
+
+### 5 TODO APP
+A simple and interactive Todo application built with HTML, CSS, and JavaScript, featuring task management with localStorage support.

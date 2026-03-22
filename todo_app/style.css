@@ -1,0 +1,190 @@
+/* 🌌 Background */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: #e2e8f0;
+}
+
+/* 📦 App Container */
+.app {
+  margin-top: 50px;
+  width: 380px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* 🏷 Title */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #22c55e, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ✍️ Input Section */
+.input-section {
+  display: flex;
+  gap: 10px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #020617;
+  color: white;
+}
+
+.input-section button {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.input-section button:hover {
+  transform: scale(1.05);
+}
+
+/* 🔍 Search */
+.search {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #020617;
+  color: white;
+}
+
+/* 🎛 Filters */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.filters button {
+  flex: 1;
+  margin: 3px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: #1e293b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filters button:hover {
+  background: #334155;
+}
+
+.active-filter {
+  background: #22c55e !important;
+}
+
+/* 📋 Task List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* 🧾 Task Item */
+li {
+  background: rgba(0,0,0,0.4);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+}
+
+li:hover {
+  transform: translateX(5px);
+}
+
+/* ✔ Completed Task */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #22c55e, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* 🔥 Animation */
+  animation: slideIn 1.8s ease-out forwards, glow 2s infinite alternate;
+}
+
+/* 🚀 Keyframes */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes glow {
+  from { text-shadow: 0 0 5px #22c55e; }
+  to { text-shadow: 0 0 15px #38bdf8; }
+}
+
+/*Buttons */
+li button {
+  margin-left: 5px;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+/* Button Colors */
+li button:nth-child(1) {
+  background: #22c55e;
+}
+
+li button:nth-child(2) {
+  background: #f59e0b;
+}
+
+li button:nth-child(3) {
+  background: #ef4444;
+}
+
+/* 📊 Footer */
+.footer {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.8;
+}
